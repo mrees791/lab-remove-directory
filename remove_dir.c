@@ -11,6 +11,7 @@
 #include <unistd.h>
 
 void myUbuntuTest() {
+    printf("test2\n");
 }
 
 char * create_path(char * path, char * filename) {
