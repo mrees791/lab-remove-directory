@@ -10,6 +10,10 @@
 #include <stdlib.h>
 #include <unistd.h>
 
+void myTest() {
+	printf("test\n");
+}
+
 void myUbuntuTest() {
     printf("test2\n");
 }
