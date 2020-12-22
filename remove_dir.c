@@ -99,7 +99,7 @@ int main() {
     printf("Enter the folder name:");
     scanf("%s", folderName);
 
-    printf("You Entered:%s. Are you sure you want to delete it and its contents? (y for yes, n for no)\n", folderName);
+    printf("You Entered:%s.\nAre you sure you want to delete it and its contents? (y for yes, n for no)\n", folderName);
     scanf("%s", choice);
 
     bool deletionConfirmed = choice[0] == 'y';
