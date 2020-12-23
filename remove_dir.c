@@ -15,7 +15,7 @@ char * create_path(char * path, char * filename) {
     char * newPath = malloc(len);
     sprintf(newPath, "%s/%s", path, filename);
     
-    return newPath; 
+    return newPath;
 }
 
 bool is_valid_dir(char * currentPath) {
