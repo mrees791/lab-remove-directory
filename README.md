@@ -71,7 +71,7 @@ Install Make for your distro.
     ```sh
     git clone https://github.com/mrees791/lab-remove-directory
     ```
-2. Change the directory to the project directory
+2. Change the current directory to the project directory
     ```sh
     cd lab-remove-directory
     ```
