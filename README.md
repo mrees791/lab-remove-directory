@@ -68,13 +68,13 @@ Install Make for your distro.
 ### Installation
 
 1. Clone the repo
-    '''sh
+    ```sh
     git clone https://github.com/mrees791/lab-remove-directory
-    '''
+    ```
 2. Run the make command from the terminal to compile the project
-    '''sh
+    ```sh
     make
-    '''
+    ```
 
 <!-- CONTACT -->
 ## Contact
