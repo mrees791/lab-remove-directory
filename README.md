@@ -62,11 +62,19 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-Incomplete
+Install GCC for your distro.
+Install Make for your distro.
 
 ### Installation
 
-Incomplete
+1. Clone the repo
+    '''sh
+    git clone https://github.com/mrees791/lab-remove-directory
+    '''
+2. Run the make command from the terminal to compile the project
+    '''sh
+    make
+    '''
 
 <!-- CONTACT -->
 ## Contact
