@@ -10,14 +10,6 @@
 #include <stdlib.h>
 #include <unistd.h>
 
-void myTest() {
-	printf("test\n");
-}
-
-void myUbuntuTest() {
-    printf("test2\n");
-}
-
 char * create_path(char * path, char * filename) {
     int len = 1 + strlen(path) + strlen(filename);
     char * newPath = malloc(len);
