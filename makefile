@@ -1,4 +1,4 @@
 all:
-	gcc remove_dir.c -o remove_dir
+	gcc app.c -o app
 clean:
-	rm remove_dir
+	rm app
