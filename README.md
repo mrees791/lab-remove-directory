@@ -16,7 +16,7 @@
   <h3 align="center">Remove Directory Lab</h3>
 
   <p align="center">
-    A utility application for UNIX based systems. Recursively deletes all files/folders within a directory.
+    A utility application for Linux systems. Recursively deletes all files/folders within a directory.
   </p>
 </p>
 
@@ -48,7 +48,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This is a utility application for UNIX based systems. It recursively deletes all files/folders within a directory. It was made for my CPSC-450 Operating Systems course.
+This is a utility application for Linux systems. It recursively deletes all files/folders within a directory. It was made for my CPSC-450 Operating Systems course with the goal of implementing memory allocation in a recursive algorithm.
 
 ### Built With
 
