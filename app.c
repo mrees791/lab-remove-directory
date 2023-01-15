@@ -14,7 +14,7 @@
 
 int main() {
   char *dirPath = malloc(255);
-  char *choice = malloc(1);
+  char *choice = malloc(2);
 
   printf("Remove Directory App\n");
   printf("Enter the directory to delete:\n");
