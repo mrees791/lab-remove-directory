@@ -49,7 +49,6 @@ void delete_file(char *dirFile) {
 
 void empty_dir(char *currentPath) {
   DIR *currentDir = opendir(currentPath);
-
   struct dirent *currentDirent = readdir(currentDir);
 
   while (currentDirent != NULL) {
@@ -77,9 +76,16 @@ void empty_dir(char *currentPath) {
 }
 
 void delete_requested_folder(char *folderName) {
-  printf("Deletion confirmed.\n");
   char *currentPath = create_path(".", folderName);
+  DIR *currentDir = opendir(currentPath);
+  bool folderExists = currentDir != NULL;
+  if (folderExists) {
   empty_dir(currentPath);
+  printf("%s and all subfolders were deleted.\n");
+  } else {
+    printf("Could not find: %s It may not exist.\n", currentPath);
+  }
+  free(currentDir);
   free(currentPath);
 }
 
