@@ -13,27 +13,24 @@
 #include <unistd.h>
 
 int main() {
-  char *folderName = malloc(50);
+  char *dirPath = malloc(255);
   char *choice = malloc(1);
 
   printf("Remove Directory App\n");
-  printf("Enter the folder name:");
-  scanf("%s", folderName);
-
-  printf("You Entered:%s.\nAre you sure you want to delete it and its "
-         "contents? (y for yes, n for no)\n",
-         folderName);
+  printf("Enter the directory to delete:\n");
+  scanf("%s", dirPath);
+  printf("Are you sure? (y for yes, n for no)\n");
   scanf("%s", choice);
 
   bool deletionConfirmed = choice[0] == 'y';
 
   if (deletionConfirmed) {
-    delete_requested_folder(folderName);
+    delete_requested_folder(dirPath);
   } else {
     notify_user_cancellation();
   }
 
-  free(folderName);
+  free(dirPath);
   free(choice);
 
   return 0;

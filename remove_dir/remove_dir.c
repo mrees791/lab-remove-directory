@@ -75,18 +75,16 @@ void empty_dir(char *currentPath) {
   delete_dir(currentPath);
 }
 
-void delete_requested_folder(char *folderName) {
-  char *currentPath = create_path(".", folderName);
-  DIR *currentDir = opendir(currentPath);
+void delete_requested_folder(char *dirPath) {
+  DIR *currentDir = opendir(dirPath);
   bool folderExists = currentDir != NULL;
   if (folderExists) {
-  empty_dir(currentPath);
-  printf("%s and all subfolders were deleted.\n");
+  empty_dir(dirPath);
+  printf("Deletion complete.\n");
   } else {
-    printf("Could not find: %s It may not exist.\n", currentPath);
+    printf("Could not find: %s It may not exist.\n", dirPath);
   }
   free(currentDir);
-  free(currentPath);
 }
 
 void notify_user_cancellation() { printf("Deletion cancelled.\n"); }
